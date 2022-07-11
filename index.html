@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Urna Eletrônica</title>
+    <script defer src="js/index.js"></script>
+    <link rel="stylesheet" href="estilos/style.css">
+</head>
+<body>
+    <main>
+        <section class="screen">
+            <div class="top">
+                <div class="top-left">
+                    <div class="d1">
+                        <span>SEU VOTO PARA</span>
+                    </div>
+                    <div class="d2">
+                        <span>VEREADOR</span>
+                    </div>
+                    <div class="d3">
+                        
+                    </div>
+                    <div class="d4">
+                        Nome: FULANO DE TAL <br>
+                        Partido: PPP <br>
+                        Vice-Prefeito: BELTRANO DE TAL
+                    </div>
+                </div>
+                <div class="top-right">
+                    <div class="image">
+                        <img src="imagens/pexels-linkedin-sales-navigator-2182970.jpg" alt="Foto do Prefeito">
+                        Prefeito
+                    </div>
+                    <div class="image small">
+                        <img src="imagens/pexels-pixabay-220453.jpg" alt="Foto do Vice-Prefeito">
+                        Vice-Prefeito
+                    </div>
+                </div>
+            </div>
+            <div class="bottom">
+                Aperte a tecla: <br>
+                CONFIRMA para CONFIRMAR este voto <br>
+                CORRIGE para REINICIAR este voto
+            </div>
+        </section>
+        <section class="keyboard">
+            <div class="keyboard-row">
+                <div class="keyboard-button" onclick="clicked(1)">1</div>
+                <div class="keyboard-button" onclick="clicked(2)">2</div>
+                <div class="keyboard-button" onclick="clicked(3)">3</div>
+            </div>
+            <div class="keyboard-row">
+                <div class="keyboard-button" onclick="clicked(4)">4</div>
+                <div class="keyboard-button" onclick="clicked(5)">5</div>
+                <div class="keyboard-button" onclick="clicked(6)">6</div>
+            </div>
+            <div class="keyboard-row">
+                <div class="keyboard-button" onclick="clicked(7)">7</div>
+                <div class="keyboard-button" onclick="clicked(8)">8</div>
+                <div class="keyboard-button" onclick="clicked(9)">9</div>
+            </div>
+            <div class="keyboard-row">
+                <div class="keyboard-button" onclick="clicked(0)">0</div>
+            </div>
+            <div class="keyboard-row">
+                <div class="keyboard-button white-button" onclick="white()">BRANCO</div>
+                <div class="keyboard-button erase-button" onclick="erase()">CORRIGE</div>
+                <div class="keyboard-button confirm-button" onclick="confirm()">CONFIRMA</div>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
